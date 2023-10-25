@@ -1,3 +1,10 @@
+import GenerateButton from './components/GenerateButton';
+
 export default function Home() {
-  return <main>Hello World!</main>;
+  return (
+    <main>
+      <h1>Welcome to the Kidical Mass Website!</h1>
+      <GenerateButton />
+    </main>
+  );
 }
