@@ -1,6 +1,7 @@
 import './globals.scss';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Image from 'next/image';
 import Link from 'next/link';
 import LogInButton from './components/LogInButton';
 import SignUpButton from './components/SignUpButton';
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <nav>
+          <Image src="/icon-192.png" alt="Logo" height="50" width="50" />
           <Link href="/">Home</Link>
           <Link href="/allevents">All Events</Link>
           <Link href="/signup">Sign Up</Link>
